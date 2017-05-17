@@ -33,7 +33,7 @@ var upd = window.upd = function () {
             .css((label == "..." || label.length == 0) ? {} : cssForLabel(label))
             .toggleClass("empty", label == "...")
             .on("click", function () {
-              var newlabel = prompt("New label?", label);
+              var newlabel = window.prompt("New label? \n - Start your label with a capital letter to have it highlighted with a background-color instead of just underlined. \n - The color of the label will be uniquely determined by it's contents.", label);
               if (newlabel !== null) {
                 localStorage.setItem("label-for:" + id, newlabel);
                 el.remove();
