@@ -1,0 +1,19 @@
+
+.fmp-label {
+  margin-right: 7px;
+  padding: 0 2px;
+  display: inline-block;
+  color: #ccc;
+  background: none;
+}
+
+.is-pinned .fmp-pin-overlay {
+  margin-left: -72px;
+  margin-top: 5px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: inline-block;
+  background: hsla(9, 100%, 50%, 0.59);
+  mix-blend-mode: multiply;
+}
